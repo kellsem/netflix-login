@@ -1,0 +1,308 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: black;
+    background-image: url(https://wallpapers.com/images/hd/netflix-background-gs7hjuwvv2g0e9fj.jpg) ;
+    background-size: cover ;
+    position: relative;
+
+   
+    height: 1102px;
+    min-height: 100vh;
+
+    -webkit-font-smoothung: antialiased;
+}
+
+button{
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+body, input, button{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1rem; 
+
+}
+
+
+header a {
+    display: flex;
+    align-items: center;
+
+    height: 90px;
+    width: 167px;
+    margin-left: 3%;
+   
+   
+}
+
+header img{
+    height:45px;
+    width:200px;
+}
+
+
+/* Fim do header */
+/* Inicio do main */
+
+
+.singin-box{
+    display: flex;
+    flex-direction: column;
+
+    margin:0 auto ;
+
+    /* margin-top: 40px; */
+    min-height: 660px;
+    width: 450px;
+    padding: 60px 68px 40px;
+    border-radius: 4px;
+    background-color:rgba(0,0,0,.75);
+   
+}
+
+.singin-box h1{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+
+.singin-box form{
+display: flex;
+flex-direction: column;
+}
+
+.singin-box input[type="email"]{
+border: 0;
+border-radius: 4px;
+color: #fff;
+height: 50px;
+line-height:50px 0;
+padding: 16px 20px ;
+
+margin-bottom: 16px;
+background: #333;
+}
+
+.singin-box input[type="password"]{
+
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    height: 50px;
+    line-height:50px 0;
+    padding: 16px 20px ;
+    
+    margin-bottom: 16px;
+    background: #333;
+}
+
+
+.singin-box form button[type="submit"]{
+    padding: 16px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 24px 0 12px;
+    background-color: #e50914;
+    color: #fff;
+}
+ 
+.remember-toSigin {
+    display:flex;
+    justify-content: space-between;
+
+    margin-top: 2px ;
+    margin-bottom: 3rem;
+    margin: 2px 0px 3rem;
+
+    font-size: 13px;
+    font-weight: 400;
+}
+
+div{
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+.remember-toSigin a:hover{
+    text-decoration: underline;    
+}
+
+.remember-toSigin div{
+    display: flex;
+    align-items: center;
+    color: #b3b3b3;
+}
+.remember-toSigin div input{
+    margin-right: 0.25rem;
+    height: 16px;
+    width: 16px;
+}
+
+.singin-box h4{
+    margin: 40px;
+    color: #737373;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+
+.singin-box h4 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.singin-box h4 a strong {
+    font-weight: 400;
+}
+
+.singin-box h4 a:hover{
+    text-decoration: underline;
+}
+
+.KnowMore{
+    color: #737373;
+    font-size: 13px;
+
+    margin: 1rem 0rem;
+}
+.KnowMore a{
+    text-decoration: none;
+    color: #0071eb;
+}
+
+.KnowMore a:hover{
+    text-decoration: underline;
+}
+
+
+/* fim do main */
+
+/* Inicio do footer */
+
+footer{
+    position: absolute;
+    bottom: 0;
+ 
+    width: 100%;  
+
+    padding: 30px 0px;
+
+    min-height: 260px;
+    background: rgba(0,0,0,.75);
+    color: #737373; 
+}
+
+.footer-content {
+    margin: 0 auto;
+    max-width: 1000px;
+  
+    width: 90%;
+}
+
+.footer-content p {
+    margin-bottom:30px ;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: #737373;
+    
+}
+
+.footer-content a:hover{
+     text-decoration:underline;
+}
+
+.links {
+    display: flex;
+    margin-bottom: 22px;
+    gap: 2rem 0rem;
+    flex-wrap: wrap;
+
+    list-style: none;
+}
+
+.links li{
+    width: 25%;
+}
+
+.links a{
+    font-size: 0.8125rem;
+}
+
+#language {
+    margin: 20px;
+    padding: 5px 1rem;
+
+    width: 138px;
+    height: 48px;
+    background: #000;
+    color: #737373;
+}
+@media (max-width: 740px){
+    body {
+        background: #000;
+        height: auto;
+}
+
+.singin-box{
+    width: 100%;
+    min-height: 550px;
+    padding: 20px 5%;
+}
+footer{
+    position: inherit;
+    border-top: 1px solid;
+}
+}
+
+.links li {
+    width: 33%;
+}
+
+@media (max-width: 500px){
+    .links li {
+        width: 50%;
+     
+    }
+}
+
+@media (max-width: 440px){
+    header{
+        width: 45px;
+     
+    }
+
+    header img{
+        width: 75px;
+        height: 20px;
+    }
+
+    header a{
+        height:45px;
+    }
+}
+
+@media (max-width: 250px){
+    .links li {
+        width: 50%;
+     
+    }
+}
+
